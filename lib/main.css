@@ -13,7 +13,7 @@ html {
 
 @font-face {
   font-family: "Carter One";
-  src: url("../fonts/CarterOne.ttf");
+  src: url("fonts/CarterOne.ttf");
 }
 
 #bg-layer, #fg-layer, #hud-layer {
@@ -29,7 +29,7 @@ html {
 
 #bg-layer {
   z-index: 0;
-  background: url("../images/StartScreen.png") no-repeat center #fff;
+  background: url("images/StartScreen.png") no-repeat center #fff;
   background-size: cover;
 
 }
