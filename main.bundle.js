@@ -909,7 +909,7 @@
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	// import Physics from './physics'
+	// import Physics from 'physics'
 
 	var Player = function () {
 	  function Player(options) {
@@ -968,51 +968,51 @@
 	      if (this.dead && this.facing === "west") {
 	        this.imageIndex = 0;
 	        this.imageWidth = 133;
-	        this.heroImage.src = './images/cat-dog-tileset/' + this.heroType + 'DeadLeft.png';
+	        this.heroImage.src = 'images/cat-dog-tileset/' + this.heroType + 'DeadLeft.png';
 	      } else if (this.dead && this.facing === "east") {
 	        this.imageIndex = 0;
 	        this.imageWidth = 133;
-	        this.heroImage.src = './images/cat-dog-tileset/' + this.heroType + 'DeadRight.png';
+	        this.heroImage.src = 'images/cat-dog-tileset/' + this.heroType + 'DeadRight.png';
 	      } else if (this.stunned && this.facing === "west") {
 	        this.imageIndex = 0;
 	        this.imageWidth = 100;
-	        this.heroImage.src = './images/cat-dog-tileset/' + this.heroType + 'StunnedLeft.png';
+	        this.heroImage.src = 'images/cat-dog-tileset/' + this.heroType + 'StunnedLeft.png';
 	      } else if (this.stunned && this.facing === "east") {
 	        this.imageIndex = 0;
 	        this.imageWidth = 100;
-	        this.heroImage.src = './images/cat-dog-tileset/' + this.heroType + 'StunnedRight.png';
+	        this.heroImage.src = 'images/cat-dog-tileset/' + this.heroType + 'StunnedRight.png';
 	      } else if (this.jumping && this.velocity.x < 0 && this.facing === "west") {
 	        this.imageIndex = 0;
 	        this.imageWidth = 100;
-	        this.heroImage.src = './images/cat-dog-tileset/' + this.heroType + 'JumpLeft.png';
+	        this.heroImage.src = 'images/cat-dog-tileset/' + this.heroType + 'JumpLeft.png';
 	      } else if (this.jumping && this.velocity.y < 0 && this.facing === "east") {
 	        this.imageIndex = 0;
 	        this.imageWidth = 100;
-	        this.heroImage.src = './images/cat-dog-tileset/' + this.heroType + 'JumpRight.png';
+	        this.heroImage.src = 'images/cat-dog-tileset/' + this.heroType + 'JumpRight.png';
 	      } else if (this.jumping && this.velocity.y > 0 && this.facing === "west") {
 	        this.imageIndex = 0;
 	        this.imageWidth = 100;
-	        this.heroImage.src = './images/cat-dog-tileset/' + this.heroType + 'FallLeft.png';
+	        this.heroImage.src = 'images/cat-dog-tileset/' + this.heroType + 'FallLeft.png';
 	      } else if (this.jumping && this.velocity.y > 0 && this.facing === "east") {
 	        this.imageIndex = 0;
 	        this.imageWidth = 100;
-	        this.heroImage.src = './images/cat-dog-tileset/' + this.heroType + 'FallRight.png';
+	        this.heroImage.src = 'images/cat-dog-tileset/' + this.heroType + 'FallRight.png';
 	      } else if (this.velocity.y > 0 && this.facing === "east") {
-	        this.heroImage.src = './images/cat-dog-tileset/' + this.heroType + 'RunRight.png';
+	        this.heroImage.src = 'images/cat-dog-tileset/' + this.heroType + 'RunRight.png';
 	        this.imageWidth = 100;
 	        this.imageIndex === 7 ? this.imageIndex = 0 : this.imageIndex++;
 	      } else if (this.velocity.x < 0 && this.facing === "west") {
 	        this.imageIndex === 7 ? this.imageIndex = 0 : this.imageIndex++;
 	        this.imageWidth = 100;
-	        this.heroImage.src = './images/cat-dog-tileset/' + this.heroType + 'RunLeft.png';
+	        this.heroImage.src = 'images/cat-dog-tileset/' + this.heroType + 'RunLeft.png';
 	      } else if (Math.abs(this.velocity.x) < 1 && this.facing === "east") {
 	        this.imageIndex = 0;
 	        this.imageWidth = 100;
-	        this.heroImage.src = './images/cat-dog-tileset/' + this.heroType + 'IdleRight.png';
+	        this.heroImage.src = 'images/cat-dog-tileset/' + this.heroType + 'IdleRight.png';
 	      } else if (Math.abs(this.velocity.x) < 1 && this.facing === "west") {
 	        this.imageIndex = 0;
 	        this.imageWidth = 100;
-	        this.heroImage.src = './images/cat-dog-tileset/' + this.heroType + 'IdleLeft.png';
+	        this.heroImage.src = 'images/cat-dog-tileset/' + this.heroType + 'IdleLeft.png';
 	      }
 
 	      this.context.drawImage(this.heroImage, this.imageIndex * this.imageWidth, 0, this.imageWidth, 150, this.position.x, this.position.y, this.size.width, this.size.height);
