@@ -1,21 +1,16 @@
-const path = require('path');
-
-module.exports = {
+var path = require('path');
+var config = {
   entry: {
     main: "./lib/index.js"
-    // test: "mocha!./test/index.js"
-    // test: 'sinon/pkg/sinon.js'
   },
   output: {
     path: __dirname,
-    filename: "[name].bundle.js"
+    filename: '[name].bundle.js'
   },
   module: {
-    noParse: [
-      /\/sinon\.js/,
-    ],
     loaders: [{
       test: /\.js$/,
+
       exclude: /node_modules/,
       loader: 'babel-loader'
     }, {
@@ -24,9 +19,6 @@ module.exports = {
     }, {
       test: /\.scss$/,
       loader: "style!css!sass"
-    }, {
-      test: /sinon\/pkg\/sinon\.js/,
-      loader: "imports?define=>false,require=>false"
     }]
   },
   resolve: {
@@ -36,3 +28,5 @@ module.exports = {
     extensions: ['', '.js', '.json', '.scss', '.css']
   }
 };
+
+module.exports = config;
