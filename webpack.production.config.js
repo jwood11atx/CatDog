@@ -1,9 +1,11 @@
 var path = require('path');
 var config = {
-  entry: path.resolve(__dirname, '../CatDog/lib/index.js'),
+  entry: {
+    main: "./lib/index.js"
+  },
   output: {
-    path: path.resolve(__dirname, '../dist'),
-    filename: 'bundle.js'
+    path: __dirname,
+    filename: '[name].bundle.js'
   },
   module: {
     loaders: [{
