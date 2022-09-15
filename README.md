@@ -1,4 +1,4 @@
-[![Stories in Ready](https://badge.waffle.io/esayler/game-time.png?label=ready&title=Ready)](http://waffle.io/esayler/game-time)
+https://jwood11atx.github.io/CatDog/
 
 # Game Time Starter Kit
 
