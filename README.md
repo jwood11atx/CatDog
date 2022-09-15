@@ -1,4 +1,4 @@
-https://jwood11atx.github.io/CatDog/
+[Play CatDog here!](https://jwood11atx.github.io/CatDog/)
 
 # Game Time Starter Kit
 
